@@ -28,3 +28,8 @@ PRODUCT_NAME := omni_BA2
 PRODUCT_BRAND := tecno
 PRODUCT_MODEL := BA2
 PRODUCT_MANUFACTURER := tecno
+
+# fastbootd
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl-mock \
+    android.hardware.fastboot@1.0-impl-mock.recovery
