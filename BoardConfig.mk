@@ -38,8 +38,16 @@ BOARD_RAMDISK_OFFSET = 0x04000000
 BOARD_KERNEL_OFFSET = 0x00008000
 BOARD_TAGS_OFFSET = 0x0e000000
 BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_TAGS_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_TAGS_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
 TARGET_PREBUILT_KERNEL := device/tecno/BA2/prebuilt/kernel
+BOARD_PREBUILT_DTBOIMAGE := device/tecno/BA2/prebuilt/dtbo.img
+BOARD_PREBUILT_DTBIMAGE_DIR := device/tecno/BA2/prebuilt/dtb
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_INCLUDE_RECOVERY_DTBO := true
+
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 32777216
@@ -65,6 +73,7 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_THEME := portrait_hdpi
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 80
+TW_EXCLUDE_LIBXML2 := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0.auto/gadget/lun%d/file
 TW_BRIGHTNESS_PATH := /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
