@@ -1,3 +1,4 @@
+
 #
 # Copyright 2018 The Android Open Source Project
 #
@@ -16,3 +17,6 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_BA2.mk
+
+COMMON_LUNCH_CHOICES := \
+    twrp_BA2-user \
