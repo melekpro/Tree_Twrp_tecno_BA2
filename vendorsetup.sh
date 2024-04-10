@@ -1,1 +1,1 @@
-add_lunch_combo omni_BA2-user
+add_lunch_combo twrp_BA2-user
