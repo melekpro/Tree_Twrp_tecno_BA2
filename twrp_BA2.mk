@@ -18,7 +18,7 @@
 $(call inherit-product, build/target/product/embedded.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 PRODUCT_COPY_FILES += \
     device/tecno/BA2/recovery.fstab:recovery/root/etc/recovery.fstab
