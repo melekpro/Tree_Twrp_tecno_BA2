@@ -30,6 +30,10 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
 TARGET_CPU_VARIANT := generic
 
+# Binder API version
+TARGET_USES_32_BIT_BINDER :=true
+TARGET_USES_64_BIT_BINDER := false
+
 # Kernel properties
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32S1,32S1 androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
