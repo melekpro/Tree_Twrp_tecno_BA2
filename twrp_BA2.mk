@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 PRODUCT_COPY_FILES += \
-    device/tecno/BA2/recovery.fstab:recovery/root/etc/recovery.fstab
+  $(OUT_DIR)/target/device/tecno/BA2/recovery.fstab:$(TARGET_COPY_OUT_RECOVERY)recovery/root/etc/recovery.fstab
 
 PRODUCT_DEVICE := BA2
 PRODUCT_NAME := twrp_BA2
