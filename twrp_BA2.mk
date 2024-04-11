@@ -13,6 +13,8 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 PRODUCT_COPY_FILES += \
   $(OUT_DIR)/target/device/tecno/BA2/recovery.fstab:$(TARGET_COPY_OUT_RECOVERY)recovery/root/etc/recovery.fstab
 
+PRODUCT_SHIPPING_API_LEVEL := 27
+
 PRODUCT_DEVICE := BA2
 PRODUCT_NAME := twrp_BA2
 PRODUCT_BRAND := tecno
