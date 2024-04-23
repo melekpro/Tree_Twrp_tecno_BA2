@@ -87,3 +87,15 @@ TW_EXCLUDE_SUPERSU := true
 # Filesystem support
 TARGET_USES_EXFAT := true
 TARGET_USES_NTFS := true
+
+# SHRP 
+SHRP_DEVICE_CODE := BA2
+SHRP_PATH := device/Tecno/BA2
+SHRP_DEVICE_TYPE := A
+SHRP_REC := /dev/block/platform/bootdevice/by-name/recovery
+SHRP_FLASH := 0
+SHRP_REC_TYPE := Normal
+SHRP_INTERNAL := /sdcard
+SHRP_EXTERNAL := /external_sd
+SHRP_OTG := /usb_otg
+SHRP_DARK := true
