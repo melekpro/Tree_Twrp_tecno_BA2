@@ -84,7 +84,6 @@ TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_INCLUDE_CRYPTO := true
 
 # Misc
-TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_DEFAULT_LANGUAGE := en
 TW_EXCLUDE_SUPERSU := true
 
